@@ -65,9 +65,13 @@
             
             <ul class="ul_metas">
               {% for item in object_list %}  
-                <div class="lista_metas">
-                  <li> <a href="{% url 'editar_meta' item.meta.id %}">{{ item.meta.nome }} <i class="fa fa-pencil"></i> <i class="fa fa-remove"></i></a> </li>
-                </div>
+                  <p id="nome-meta"> 
+                    <li class="lista_metas"> 
+                      <a href="{% url 'todolist' %}">{{ item.meta.nome }}</a>
+                      <a href="{% url 'editar_meta' item.meta.id %}"><i class="fa fa-pencil"></i> </a>
+                      <a href=""> <i class="fa fa-remove"></i> </a> 
+                    </li>
+                  </p>
                 <!-- <li><a href="">Link 2</a></li>
                 <li><a href="">Link 3</a></li> -->
               {% endfor %}

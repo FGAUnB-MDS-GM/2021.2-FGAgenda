@@ -2,70 +2,36 @@
 {% load static %}
 {% block content %}
 <head>
-    <!-- <link rel="stylesheet" href="{% static 'css/list_product_types.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/todolist.css' %}">
 </head>
 
-<body>
-    <h1>TO DO LIST</h1>
-    <!-- action = "/todolist/adicionaTarefa/" -->
-    <form method = "post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <!-- <input type="text" name="content" required> -->
-        <input style="display: inline;" type="submit" value="Adicionar Tarefa">
-    </form>
-
-    {% for meta in metas %}
-
-        <!-- <p> {{ meta.nome }} </p> -->
-
-    {% endfor %}
-
-    {% for item in all_items %}
-
-        <p> {{ item.tarefa }} </p>
-
-        <form style="width:20%;margin:auto 0 auto 0; display: inline;" action="/todolist/editaTarefa/{{item.pk}}/" method = "post">
+<div class="todo-list-container">
+    <body>
+        <h1>TO DO LIST</h1>
+        <form class="todo-list-form" method = "post">
             {% csrf_token %}
-            <input type="text" name="conteudo" value="{{item.tarefa}}" required>
-            <input type="submit" value="Editar">
+            {{ form.as_p }}
+            <input style="display: inline;" type="submit" value="Adicionar Tarefa">
         </form>
 
-        <form style="width:20%; display: inline;" action="/todolist/deletaTarefa/{{item.pk}}/" method = "post">
-            {% csrf_token %}
-            <input type="submit" value="Excluir">
-        </form>
+        {% for item in all_items %}
 
-    {% endfor %}
+            <p > {{ item.tarefa }} </p>
+            <!-- style="width:20%;margin:auto 0 auto 0; display: inline;" -->
+            <form class="todo-list-form" action="/todolist/editaTarefa/{{item.pk}}/" method = "post">
+                {% csrf_token %}
+                <input type="text" name="conteudo" value="{{item.tarefa}}" required>
+                <input class="botao-editar" type="submit" value="Editar">
+            </form>
+            <!-- style="width:20%; display: inline;" -->
+            <form class="todo-list-form" action="/todolist/deletaTarefa/{{item.pk}}/" method = "post">
+                {% csrf_token %}
+                <input class="todo-list-deletar-form" type="submit" value="Excluir">
+            </form>
 
-    {% for item in all_items %}
-        
-        <!-- {% for meta in metas %} -->
+        {% endfor %}
 
-            <!-- {% if item.meta == meta.nome %} -->
-
-                <!-- >>  {{ item.tarefa|default:"TarefaVazia" }}  -->
-        <p>>> {{ item.tarefa }} </p> 
-        
-        <!-- <form method = "post">  -->
-        <form style="width:20%;margin:auto 0 auto 0; display: inline;" action="/todolist/editaTarefa/{{item.pk}}/" method = "post">
-            {% csrf_token %}
-            <input type="text" name="content" value="{{item.tarefa}}" required>
-            <input type="submit" value="Editar">
-        </form>
-        
-        <form style="width:20%; display: inline;" action="/todolist/deletaTarefa/{{item.id}}/" method = "post">
-            {% csrf_token %}
-            <input type="submit" value="Excluir">
-        </form>
-
-            
-            <!-- {% endif %} -->
-            
-        <!-- {% endfor %} -->
-
-    {% endfor %}
-
-</body>
+    </body>
+</div>
 
 {% endblock %}

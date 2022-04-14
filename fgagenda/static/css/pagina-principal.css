@@ -84,7 +84,7 @@ ul{
 a{
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  margin-left: 40px;
+  margin-left: 0px;
   text-decoration: none;
   color: black;
   display: inline-block;
@@ -93,7 +93,7 @@ a{
 }
 
 a:hover{
-  margin-right: 1150px;
+  margin-right: 0px;
   background-color: rgba(255, 255, 255, .3);
 
 }

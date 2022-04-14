@@ -68,7 +68,7 @@
                 <div class="lista_metas">
                   <li> 
                     <a href="{% url 'editar_meta' item.meta.id %}">{{ item.meta.nome }}</a>
-                    <a><i class="fa fa-pencil"></i></a>
+                    <a href="{% url 'todolist' item.meta.id %}"><i class="fa fa-pencil"></i></a>
                     <a href="{% url 'deletar_meta' item.meta.id %}"><i class="fa fa-remove"></i></a>
                   </li>
                 </div>

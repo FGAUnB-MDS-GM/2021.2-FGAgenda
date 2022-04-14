@@ -5,6 +5,7 @@
 <head>
     <link rel="stylesheet" href="{% static 'css/pagina-principal.css' %}">
     <script src="{% static 'dycalendar.js' %}"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'js.js' %}"></script>
 </head>
@@ -12,7 +13,8 @@
 <body>
  
 <div>
-    <button class="btn btn-color">+ Criar</button>
+    <!-- <a href="{% url 'selecionar' %}"><button class="btn btn-color">+ Criar</button></a> -->
+    <button onclick="location.href='{% url 'selecionar' %}'" class="btn btn-color" >+ Criar</button>
 </div>
 
 <section>
@@ -60,13 +62,21 @@
                 Metas
                 <img src="{% static 'icones/seta_branca.png' %}" width="20px">
             </a>
+            
             <ul class="ul_metas">
-                <li><a href="">Link 1</a></li>
-                <li><a href="">Link 2</a></li>
-                <li><a href="">Link 3</a></li>
-
+              {% for item in object_list %}  
+                <div class="lista_metas">
+                  <li> 
+                    <a href="{% url 'editar_meta' item.meta.id %}">{{ item.meta.nome }}</a>
+                    <a href="{% url 'todolist' item.meta.id %}"><i class="fa fa-pencil"></i></a>
+                    <a href="{% url 'deletar_meta' item.meta.id %}"><i class="fa fa-remove"></i></a>
+                  </li>
+                </div>
+                <!-- <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li> -->
+              {% endfor %}
             </ul>
-
+            
         </li>
 
 

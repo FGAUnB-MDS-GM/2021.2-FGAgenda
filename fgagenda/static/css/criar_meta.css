@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.cria-meta-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.cria-meta-container h1 {
+    width: 38%;
+    text-align: left;
+}
+  
+.cria-meta-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 60%;
+}
+  
+.cria-meta-form p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+  
+.cria-meta-form label {
+    width: 13%;
+    text-align: right;
+}
+  
+.cria-meta-form input,
+.cria-meta-form textarea {
+    width: 80%;
+    border: none;
+    background-color: rgb(104, 216, 216);
+    padding: 0.5rem;
+  }
+
+.cria-meta-form textarea {
+    resize: none;
+}
+  
+.cria-meta-form select {
+    width: calc(80% + 1rem);
+}
+  
+/* .create-product-form input[type="submit"] {
+    background-color: rgb(104, 216, 216);
+    color: black;
+    width: 20%;      
+} */
+
+/* */
+
+.cria-meta-form input[type="submit"]{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border: none;
+    padding: 8px 0px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px rgb(184, 180, 180);
+    background-color: rgb(104, 216, 216);
+    /* width: 5px 10px; */
+    width: 20%;
+}
+.cria-meta-form input[type="submit"]-color{
+    background-color: rgb(104, 216, 216);
+    color: black;
+    border-radius: 10px;
+}
+.cria-meta-form input[type="submit"]:hover{
+    background-color: rgb(32, 110, 110);
+    color: white;
+}
+.cria-meta-form input[type="submit"]:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}

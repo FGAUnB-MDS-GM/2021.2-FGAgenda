@@ -1,20 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}]
+{% block content %}
 
 <head>
-    <!-- <link rel="stylesheet" href="{% static 'css/list_product_types.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/criar_meta.css' %}">
 </head>
 
-<body>
-    <h1>META</h1>
-    
-    <form action = "" method = "post">{% csrf_token %} 
+<div id="container" class="cria-meta-container">
+    <body>
+        <h1>Preencha os campos</h1>
+        
+        <form method = "post" class="cria-meta-form">{% csrf_token %} 
 
-        {{ form.as_p }}
+            {{ form.as_p }}
 
-        <input type="submit" value="Cadastrar Meta">
-    </form>
-</body>
-
+            <input type="submit" value="Cadastrar">
+        </form>
+    </body>
+</div>
 {% endblock %}

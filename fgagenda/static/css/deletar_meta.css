@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+.center-content{
+    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+div.content{
+    margin-top: 8%;
+    width: 85rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-self: center;
+}
+
+form.deletar-meta{
+    height: 2rem;
+    width: 12rem;
+    
+}
+
+.deletar-meta input{
+    height: 1.5rem;
+    width: 4.5rem;
+}
+
+.deletar-meta input[type="submit"]{
+    background-color: rgb(152, 206, 206);
+    border: none;
+    color: black;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 1.5px 1.5px rgb(184, 180, 180);
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.deletar-meta input[type="submit"]:active{
+    background-color: rgb(32, 110, 110);
+    color: white;
+    position: relative;
+    top: 3px;
+    box-shadow: none;
+}
+
+.deletar-meta input[type="submit"]:hover{
+    background-color: rgb(32, 110, 110);
+    color: white;
+
+}
+
+.deletar-meta input[type="reset"]{
+    background-color: rgb(177, 175, 175);
+    border: none;
+    color: black;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 1.5px 1.5px rgb(184, 180, 180);
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.deletar-meta input[type="reset"]:active{
+    background-color: rgb(177, 177, 177);
+    color: white;
+    position: relative;
+    top: 3px;
+    box-shadow: none;
+}
+
+.deletar-meta input[type="reset"]:hover{
+    background-color: rgb(177, 177, 177);
+    color: white;
+  
+}

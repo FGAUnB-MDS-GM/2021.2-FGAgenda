@@ -23,7 +23,7 @@ class Meta(models.Model):
     nome = models.CharField(
         verbose_name=_("Nome"),
         unique = True,
-        max_length=50,
+        max_length=20,
         blank=False
     )
 
@@ -41,7 +41,7 @@ class Meta(models.Model):
 
     dataFim = models.DateTimeField(
         verbose_name=_("Data Fim"),
-        blank=True,
+        blank=False,
         null=False,
     )
 

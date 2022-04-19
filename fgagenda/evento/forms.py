@@ -32,7 +32,7 @@ class CriaEventoForm(forms.ModelForm):
 
 class EditaEventoForm(forms.ModelForm):
 
-    class Evento:
+    class Meta:
         dia_seguinte = datetime.today() + timedelta(days=1)
         dia_seguinte = dia_seguinte.replace(hour=0)
         model = EventoModel

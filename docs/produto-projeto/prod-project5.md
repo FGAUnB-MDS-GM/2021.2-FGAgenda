@@ -420,9 +420,9 @@ Página para criar meta - US 04, 05, 07, 12, 14:
 	* US-05: Editar Metas;
 	* US-06: Marcar meta como completa;
 	* US-07: Remover uma Meta;
-	* US-12: Criar uma TO-DO list; 
-	* US-13: Editar uma TO-DO list;
-	* US-14: Excluir uma lista de tarefas (TO-DO lists);
+	* US-14: Criar uma TO-DO list; 
+	* US-15: Editar uma TO-DO list;
+	* US-16: Excluir uma lista de tarefas (TO-DO lists);
 
 ### Backlog da Unidade 5
 

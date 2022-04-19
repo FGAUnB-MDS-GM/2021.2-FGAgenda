@@ -40,7 +40,7 @@ Release  28 março - 04 abril
 
 * [Visão de produto e projeto - Unidade 4](docs/produto-projeto/prod-project4.md)
 
-Release  28 - 04 abril
+Release  08 - 28 abril
 
 * [Visão de produto e projeto - Unidade 5](docs/produto-projeto/prod-project5.md)
 

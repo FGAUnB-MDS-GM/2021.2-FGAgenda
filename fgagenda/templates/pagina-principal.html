@@ -54,7 +54,7 @@
                 <div class="lista_eventos">
                   <li> 
                     <a href="{% url 'editar_evento' evento.id %}">{{ evento.nome }}</a>
-                    <a href="{% url 'todolist' evento.id %}"><i class="fa fa-pencil"></i></a>
+                    <a href="{% url 'todolist_evento' evento.id %}"><i class="fa fa-pencil"></i></a>
                     <a href="{% url 'deletar_evento' evento.id %}"><i class="fa fa-remove"></i></a>
                   </li>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="lista_metas">
                   <li> 
                     <a href="{% url 'editar_meta' meta.id %}">{{ meta.nome }}</a>
-                    <a href="{% url 'todolist' meta.id %}"><i class="fa fa-pencil"></i></a>
+                    <a href="{% url 'todolist_meta' meta.id %}"><i class="fa fa-pencil"></i></a>
                     <a href="{% url 'deletar_meta' meta.id %}"><i class="fa fa-remove"></i></a>
                   </li>
                 </div>

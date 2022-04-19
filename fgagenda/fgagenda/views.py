@@ -10,8 +10,15 @@ class BaseView(TemplateView):
 class Inicio(ListView):
     template_name = 'pagina-principal.html'
         
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['metas'] = Meta.objects.all()
+        context['eventos'] = Evento.objects.all()
+        return context   
+    
     def get_queryset(self):
         metas = Meta.objects.all()
+        eventos = Evento.objects.all()
 
         queryset = []
 
@@ -20,9 +27,14 @@ class Inicio(ListView):
                 'meta': meta, 
             })
 
-        return queryset
+        for evento in eventos:
+            queryset.append({
+                'evento': evento, 
+            }) 
 
-    def get_queryset(self):
+        return queryset 
+
+    """ def get_queryset(self):
         eventos = Evento.objects.all()
 
         queryset = []
@@ -32,7 +44,7 @@ class Inicio(ListView):
                 'evento': evento, 
             })
 
-        return queryset
+        return queryset """
 
 class Selecionar(TemplateView):
     pass

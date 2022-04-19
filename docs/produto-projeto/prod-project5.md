@@ -443,6 +443,17 @@ Página para criar meta - US 04, 05, 07, 12, 14:
 	* A dupla do back-end, realizou pair paring aos sábados e domingos  durante 2h para realização da sprint da semana, sendo o Leonardo o piloto e Luís o co-piloto, invertendo os papéis a cada fim de semana. Foi introduzido a refatoração do código, para deixa-lo mais facil de entender e melhor de achar eventuais bugs.
 	* A dupla de front-end (Taynara e Pedro) não realizou o Pair Pairing, decidiu dividir as atividades em tarefas individuais diárias, tirando a duvida de qualquer eventual dificuldades nas reuniões. 
 
+### Estratégias de Teste
+* **Primeira Estratégia de Teste:**
+	* Tipo de teste: Funcional;
+	* Nível de teste: Sistema; e
+	* Técnica de teste: Manual.
+
+* **Segunda Estratégia de Teste:**
+	* Tipo de teste: Eficiência;
+	* Nível de teste: Sistema; e
+	* Técnica de teste: Automático.
+
 ## 4. Lições Aprendidas
 
 ### 4.1 Unidade 1

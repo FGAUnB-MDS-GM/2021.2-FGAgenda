@@ -1,6 +1,6 @@
 from django.db import models
 from django.core import validators
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
 
 class Evento(models.Model):
@@ -12,7 +12,7 @@ class Evento(models.Model):
     nome = models.CharField(
         verbose_name=_("Nome"),
         unique = True,
-        max_length=50,
+        max_length=20,
         blank=False
     )
 
@@ -23,7 +23,16 @@ class Evento(models.Model):
         null=True
     )
 
-    data = models.DateTimeField(
-        verbose_name=_("Data"),
+    dataInicio = models.DateTimeField(
         default=timezone.now
     )
+
+    dataFim = models.DateTimeField(
+        verbose_name=_("Data Fim"),
+        blank=False,
+        null=False,
+    )
+
+    def configura_data_inicio(self):
+        self.dataInicio = timezone.now()
+        self.save()

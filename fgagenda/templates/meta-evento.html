@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{% static 'css/meta-evento.css' %}">
 </head>
 
-<button class="btn btn-color pos-evento">Evento</button>
+<button onclick="window.location.href={% url 'criar_evento' %};" class="btn btn-color pos-evento">Evento</button>
 
 <button onclick="window.location.href={% url 'criar_meta' %};" class="btn btn-color pos-meta">Meta</button>
 

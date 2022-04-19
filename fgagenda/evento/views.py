@@ -8,13 +8,25 @@ from .models import *
 from .forms import *
 
 
-class CreateEvento(CreateView):
-    template_name='create_evento.html'
+class CriaEvento(CreateView):
+    template_name = 'criar_evento.html'
     model = Evento
+    form_class = CriaEventoForm
 
-    fields = [
-        'nome',
-        'descricao', 
-        'data'
-    ]
-    success_url = reverse_lazy('create_evento.html')
+    success_url = reverse_lazy('inicio')
+    
+
+class EditaEvento(UpdateView):
+    template_name='editar_evento.html'
+    model = Evento
+    form_class = EditaEventoForm
+    
+    success_url = reverse_lazy('inicio')
+
+
+class DeletaEvento(DeleteView):
+    template_name = 'deletar_evento.html'
+    queryset = Evento.objects.all()
+    
+    success_url = reverse_lazy('inicio')
+    

@@ -444,15 +444,26 @@ Página para criar meta - US 04, 05, 07, 12, 14:
 	* A dupla de front-end (Taynara e Pedro) não realizou o Pair Pairing, decidiu dividir as atividades em tarefas individuais diárias, tirando a duvida de qualquer eventual dificuldades nas reuniões. 
 
 ### Estratégias de Teste
-* **Primeira Estratégia de Teste:**
-	* Tipo de teste: Funcional;
-	* Nível de teste: Sistema; e
-	* Técnica de teste: Manual.
 
-* **Segunda Estratégia de Teste:**
-	* Tipo de teste: Eficiência;
-	* Nível de teste: Sistema; e
-	* Técnica de teste: Automático.
+
+ | Tipo de Teste | Nível de Teste | Técnica de Teste | Requisito Funcional |
+ | :-----------: | :------------: | :--------------: | :-----------------: |
+ | Funcional     | Sistema        | Manual           |         US-01       |
+ | Funcional     | Sistema        | Manual           |         US-02       |
+ | Funcional     | Sistema        | Manual           |         US-03       |
+ | Funcional     | Sistema        | Manual           |         US-04       |
+ | Funcional     | Sistema        | Manual           |         US-05       |
+ | Funcional     | Sistema        | Manual           |         US-06       |
+ | Funcional     | Sistema        | Manual           |         US-07       |
+ | Funcional     | Sistema        | Manual           |         US-08       |
+ | Funcional     | Sistema        | Manual           |         US-09       |
+ | Funcional     | Sistema        | Manual           |         US-10       |
+ | Funcional     | Sistema        | Manual           |         US-12       |
+ | Funcional     | Sistema        | Manual           |         US-13       |
+ | Funcional     | Sistema        | Manual           |         US-14       |
+ | Funcional     | Sistema        | Manual           |         US-15       |
+ | Funcional     | Sistema        | Manual           |         US-16       |
+
 
 ## 4. Lições Aprendidas
 

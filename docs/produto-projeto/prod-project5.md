@@ -479,9 +479,13 @@ As principais lições aprendidas pela equipe Gama foram: organização e pré-c
 <p>Ponto à melhorar para a próxima unidade: Fazer com que todos os membros da equipe estejam presentes nas apresentações ao professor e aulas, dividir melhor as issues e acelerar o ritmo produtivo da equipe</p>
 
 ### 4.4 Unidade 4
-
+<P>As principais funções aprendidas nessa unidade foram: Como organizar e se planejar em equipe, como distribuir melhor cada função e dividir cada tarefa entre os integrantes. Além de uma maior capacidade de otimização de código, deixando-o mais enxuto e mais simples de fazer eventuais manutenções.<P>
+<P>Ponto à melhorar para proxima unidade: Oganizar melhor a forma como as atividades são gerenciadas por cada integrante da equipe e aperfeiçoamento das softskills de alguns dos participantes.<P>
+	
 ### 4.5 Unidade 5
-
+<P>As principais funções aprendidas nessa unidade foram: Introdução aos Testes de Software e as suas principais estrategias, aperfeiçoamento do teste funcional com nível de sistema e técnica manual.<P>
+<P>Uso de algumas ferramentas para otimização do código e listagem de versões, além do controle de eventuais bugs e erros.<P>
+	
 ## 5. Referências Bibliográficas
 
 SOMMERVILE, I. Processos de software. In: SOMMERVILLE, I. Engenharia de software. 9. ed. rev. São Paulo: Pearson, 2011.

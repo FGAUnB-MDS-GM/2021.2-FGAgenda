@@ -14,7 +14,6 @@ class Inicio(ListView):
         context = super().get_context_data(**kwargs)
         context['metas'] = Meta.objects.all()
         context['eventos'] = Evento.objects.all()
-        context['aulas'] = Aula.objects.all()
         return context   
     
     def get_queryset(self):
@@ -34,24 +33,7 @@ class Inicio(ListView):
                 'evento': evento, 
             }) 
 
-        for aula in aulas:
-            queryset.append({
-                'evento': aula, 
-            })
-
         return queryset 
-
-    """ def get_queryset(self):
-        eventos = Evento.objects.all()
-
-        queryset = []
-
-        for evento in eventos:
-            queryset.append({
-                'evento': evento, 
-            })
-
-        return queryset """
 
 class Selecionar(TemplateView):
     pass

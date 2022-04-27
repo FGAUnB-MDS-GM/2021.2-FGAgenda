@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'todolist',
     'meta',
-    'evento'
+    'evento',
+    'usuario'
 ]
 
 MIDDLEWARE = [

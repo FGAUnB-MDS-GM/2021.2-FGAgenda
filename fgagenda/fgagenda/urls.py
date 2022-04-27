@@ -25,6 +25,7 @@ urlpatterns = [
     path('todolist/', include('todolist.urls')),
     path('meta/', include('meta.urls')),
     path('evento/',  include('evento.urls')),
+    path('usuario/', include('usuario.urls')),
     path('inicio/', Inicio.as_view(template_name="pagina-principal.html"), name="inicio"),
     path('selecionar/', Selecionar.as_view(template_name="meta-evento.html"), name="selecionar"),
 ]

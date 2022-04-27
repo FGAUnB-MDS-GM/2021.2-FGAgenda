@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/meta-evento.css' %}">
+</head>
+
+<script>
+    function visitaCriaEvento(){
+        window.location="{% url 'criar_evento' %}";
+    }
+
+    function visitaCriaAula(){
+        window.location="{% url 'criar_aula' %}";
+    }
+</script>
+
+<button onclick="visitaCriaEvento();" class="btn btn-color pos-evento">Evento</button>
+
+<button onclick="visitaCriaAula();" class="btn btn-color pos-meta">Aula</button>
+
+
+{% endblock %}

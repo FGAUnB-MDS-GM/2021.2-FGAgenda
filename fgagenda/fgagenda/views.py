@@ -2,7 +2,7 @@ from django.views.generic import TemplateView, ListView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from meta.models import Meta
-from evento.models import Evento
+from evento.models import Evento, Aula
 
 class BaseView(TemplateView):
   pass
@@ -14,11 +14,13 @@ class Inicio(ListView):
         context = super().get_context_data(**kwargs)
         context['metas'] = Meta.objects.all()
         context['eventos'] = Evento.objects.all()
+        context['aulas'] = Aula.objects.all()
         return context   
     
     def get_queryset(self):
         metas = Meta.objects.all()
         eventos = Evento.objects.all()
+        aulas = Aula.objects.all()
 
         queryset = []
 
@@ -31,6 +33,11 @@ class Inicio(ListView):
             queryset.append({
                 'evento': evento, 
             }) 
+
+        for aula in aulas:
+            queryset.append({
+                'evento': aula, 
+            })
 
         return queryset 
 

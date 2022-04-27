@@ -1,4 +1,4 @@
-from django.views.generic import ListView, DetailView, FormView, View
+from django.views.generic import TemplateView, ListView, DetailView, FormView, View
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
@@ -13,8 +13,8 @@ class CriaEvento(CreateView):
     model = Evento
     form_class = CriaEventoForm
 
-    success_url = reverse_lazy('inicio')
-    
+    success_url = reverse_lazy('inicio')   
+
 
 class EditaEvento(UpdateView):
     template_name='editar_evento.html'
@@ -29,4 +29,32 @@ class DeletaEvento(DeleteView):
     queryset = Evento.objects.all()
     
     success_url = reverse_lazy('inicio')
+
+
+class CriaAula(CreateView):
+    template_name = 'criar_aula.html'
+    model = Aula
+    form_class = CriaAulaForm
+
+    success_url = reverse_lazy('inicio') 
     
+
+class EditaAula(UpdateView):
+    template_name = 'editar_aula.html'
+    model = Aula
+    form_class = EditaAulaForm
+
+    success_url = reverse_lazy('inicio')
+
+
+class DeletaAula(DeleteView):
+    template_name = 'deletar_aula.html'
+    queryset = Aula.objects.all()
+    
+    success_url = reverse_lazy('inicio')
+
+
+class Selecionar(View):
+    template_name='evento-aula.html'
+    def get(self, request):     
+        return render(request, 'evento-aula.html')

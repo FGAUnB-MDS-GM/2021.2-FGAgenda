@@ -25,8 +25,6 @@ class ToDoListMetaView(CreateView):
     
     def get_context_data(self, **kwargs):
         context = super(ToDoListMetaView, self).get_context_data(**kwargs)
-        current_url = resolve(self.request.path_info).url_name
-        print(current_url)
         meta = Meta.objects.get(pk=self.kwargs['pk'])
         context['meta'] = meta
         context['all_items'] = ToDoList.objects.filter(meta=meta)
@@ -164,9 +162,3 @@ def deletar_tarefa(request, pk):
         reverse_lazy(todolist_url, kwargs={'pk': pk }, 
                         current_app='todolist')
     )
-
-    return HttpResponseRedirect(
-        reverse_lazy('todolist', kwargs={'pk': todolist.meta.id }, 
-                        current_app='todolist')
-    )
-

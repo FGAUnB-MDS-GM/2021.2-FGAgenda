@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="{% static 'css/meta-evento.css' %}">
 </head>
 
-<button onclick="window.location.href={% url 'criar_evento' %};" class="btn btn-color pos-evento">Evento</button>
+<script>
+    function visitaCriaEventoAula(){
+        window.location="{% url 'evento-aula' %}";
+    }
 
-<button onclick="window.location.href={% url 'criar_meta' %};" class="btn btn-color pos-meta">Meta</button>
+    function visitaCriaMeta(){
+        window.location="{% url 'criar_meta' %}";
+    }
+</script>
+
+<button onclick="visitaCriaEventoAula();" class="btn btn-color pos-evento">Evento</button>
+
+<button onclick="visitaCriaMeta();" class="btn btn-color pos-meta">Meta</button>
 
 
 {% endblock %}

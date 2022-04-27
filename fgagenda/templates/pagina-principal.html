@@ -10,11 +10,17 @@
     <script type="text/javascript" src="{% static 'js.js' %}"></script>
 </head>
 
+<script>
+  function visitaSelecionar(){
+      window.location="{% url 'selecionar' %}";
+  }
+</script>
+
 <body>
  
 <div>
     <!-- <a href="{% url 'selecionar' %}"><button class="btn btn-color">+ Criar</button></a> -->
-    <button onclick="location.href='{% url 'selecionar' %}'" class="btn btn-color" >+ Criar</button>
+    <button onclick="visitaSelecionar();" class="btn btn-color" >+ Criar</button>
 </div>
 
 <section>
@@ -61,6 +67,28 @@
               {% endfor %}
             </ul>
         </li> 
+
+
+        <li class="li_p">
+          <a href="javascript://" class="bt3">
+
+              Aulas
+
+              <img src="{% static 'icones/seta_branca.png' %}" width="20px" >
+
+          </a>
+          <ul class="ul_aulas">
+            {% for aula in aulas %}  
+              <div class="lista_eventos">
+                <li> 
+                  <a href="{% url 'editar_aula' aula.id %}">{{ aula.nome }}</a>
+                  <a href="{% url 'deletar_aula' aula.id %}"><i class="fa fa-remove"></i></a>
+                </li>
+              </div>
+            {% endfor %}
+          </ul>
+       </li>
+
 
         <li class="li_p">
             <a href="javascript://" class="bt2">

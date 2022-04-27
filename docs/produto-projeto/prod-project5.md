@@ -1,6 +1,6 @@
 # Visão do Produto e Projeto
 
-[Apresentação resultados - Unidade 3 (Vídeo)](https://youtu.be/OfbZzerabCA)
+[Apresentação resultados - Unidade 4 (Vídeo)](https://youtu.be/HP5rDg36bIk)
 
 ## 1. Visão Geral do Produto
 
@@ -44,174 +44,16 @@ O produto visa facilitar a organização pessoal do usuário com relação a seu
 <li>US-09: Editar Eventos;</li>
 <li>US-10: Remover Evento;</li>
 <li>US-11: Enviar notificações de Eventos;</li>
-<li>US-12: Criar uma TO-DO list;</li>
-<li>US-13: Editar a lista de tarefas (TO-DO list);</li>
-<li>US-14: Excluir uma lista de tarefas (TO-DO lists);</li>
-<li>US-15: Calcular porcentagem das tarefas já realizadas;</li>
+<li>US-12: Escolher tipo aula ou evento;</li>
+<li>US-13: Adicionar aula por código/horário;</li>
+<li>US-14: Criar uma TO-DO list;</li>
+<li>US-15: Editar a lista de tarefas (TO-DO list);</li>
+<li>US-16: Excluir uma lista de tarefas (TO-DO lists);</li>
+<li>US-17: Calcular porcentagem das tarefas já realizadas;</li>
 
 #### Requisitos Funcionais - SAFE
 
-<!--<table>-->
-<!--<thead>-->
-<!--  <tr>-->
-<!--    <th>ID</th>-->
-<!--    <th>HISTÓRIA (Req. Funcionais )</th>-->
-<!--    <th>PRIORIDADE</th>-->
-<!--  </tr>-->
-<!--</thead>-->
-<!--<tbody>-->
-<!--  <tr>-->
-<!--    <td>US - 01</td>-->
-<!--    <td>Eu, como usuário do produto, desejo cadastrar uma nova conta na plataforma, para que eu possa realizar login e ter acesso as funcionalidades do sistema</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 02</td>-->
-<!--    <td>Eu, como usuário do produto, desejo realizar login na plataforma, para que eu possa ter acesso às funcionalidades da mesma</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 03</td>-->
-<!--    <td>Eu, como usuário do produto, desejo realizar logout, para que eu possa desconectar a minha conta da plataforma</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 04</td>-->
-<!--    <td>Eu, como usuário do produto, desejo cadastrar uma Meta na minha agenda, para saber ao certo o dia que preciso terminar determinada tarefa</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 05</td>-->
-<!--    <td>Eu, como usuário do produto, desejo editar minhas Metas, para que elas posssam estar sempre atualizadas</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 06</td>-->
-<!--    <td>Eu, como usuário do produto, no momento de cadastrar uma Meta desejo ter a opção de ter a TO-DO list vinculada a esta meta</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 07</td>-->
-<!--    <td>Eu, como usuário do produto, no momento de cadastrar uma Meta desejo escrever sua descrição</td>-->
-<!--    <td align="center">BAIXA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 08</td>-->
-<!--    <td>Eu, como usuário do produto, no momento de cadastrar a Meta desejo ter a opção de receber notificações personalizadas para que possa me programar </td>-->
-<!--    <td align="center">BAIXA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 09</td>-->
-<!--    <td>Eu, como usuário do produto, desejo marcar como completa uma Meta realizada</td>-->
-<!--    <td align="center">MÉDIA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 10</td>-->
-<!--    <td>Eu, como usuário do produto, desejo remover uma Meta, caso eu queira, para poder organizar minha agenda</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 11</td>-->
-<!--    <td>Eu, como usuário de produto, ao criar uma Meta desejo poder escolher cumpri-lá ao longo do dia e em um horário específico</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 12</td>-->
-<!--    <td>Eu, como usuário do produto, desejo cadastrar um Evento na minha agenda, para saber ao certo o dia e hora que tal Evento ocorrerá</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 13</td>-->
-<!--    <td>Eu, como usuário do produto, desejo editar meus Eventos, para que eles posssam estar sempre atualizados</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 14</td>-->
-<!--    <td>Eu, como usuário do produto, desejo poder remover um Evento, caso eu queira, para organizar melhor minha agenda</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 15</td>-->
-<!--    <td>Eu, como usuário do produto, no momento de cadastrar um Evento, desejo adicionar a hora do Evento</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 16</td>-->
-<!--    <td>Eu, como usuário do produto, no momento de cadastrar um Evento, desejo adicionar o dia do Evento</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 17</td>-->
-<!--    <td>Eu, como usuário do produto,  no momento de cadastrar um Evento, desejo escolher o nome do Evento, para que eu possa saber o que esse evento está se referindo</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 18</td>-->
-<!--    <td> Eu, como usuário do produto, no momento de cadastrar uma Evento, desejo adicionar uma frequência/periodicidade dessa meta na minha agenda</td>-->
-<!--    <td align="center">MÉDIA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 19</td>-->
-<!--    <td>Eu, como usuário do produto, desejo receber notificações de qualquer Evento com antecedência para que possa me programar.</td>-->
-<!--    <td align="center">BAIXA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 20</td>-->
-<!--    <td>Eu, como usuário do produto, no momento de cadastrar um Evento desejo escolher se será do tipo Aula ou apenas Evento</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 21</td>-->
-<!--    <td>Eu, como usuário do produto,  no momento de cadastrar uma Aula (tipo de Evento), desejo escolher como o horário da minha Aula será cadastrado (código ou horário)</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 22</td>-->
-<!--    <td>Eu, como usuário do produto, desejo de cadastrar uma tarefa na minha TO-DO list, para que eu possa saber o que fazer</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 23</td>-->
-<!--    <td>Eu, como usuário do produto, desejo de editar uma tarefa na minha TO-DO list, para que ela possa estar sempre atualizada</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 24</td>-->
-<!--    <td>Eu, como usuário do produto, desejo de excluir uma tarefa na minha TO-DO list, para que ela possa estar sempre atualizada</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 25</td>-->
-<!--    <td>Eu, como usuário do produto, desejo criar uma lista de tarefas (TO-DO list) dentro de um Evento, para que dessa forma fique claro o que preciso fazer em cada atividade</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 26</td>-->
-<!--    <td>Eu, como usuário do produto, desejo criar uma lista de tarefas (TO-DO list) dentro de uma Meta, para que dessa forma fique claro o que preciso fazer em cada atividade</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 27</td>-->
-<!--    <td>Eu, como usuário do produto, desejo poder editar minhas lista de tarefas (TO-DO lists) dentro de um Evento, para que elas posssam estar sempre atualizadas</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 28</td>-->
-<!--    <td>Eu, como usuário do produto, desejo poder editar minhas lista de tarefas (TO-DO lists) dentro de uma Meta, para que elas posssam estar sempre atualizadas</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 29</td>-->
-<!--    <td>Eu, como usuário do produto, desejo poder remover uma lista de atividades (TO-DO list) de um Evento ou Meta, caso eu queira, para poder organizar minha agenda</td>-->
-<!--    <td align="center">ALTA</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>US - 30</td>-->
-<!--    <td>Eu, como usuário do produto, desejo saber qual a porcentagem das tarefas que já realizei, para que possa ter uma noção da minha evolução nelas</td>-->
-<!--    <td align="center">MÉDIA</td>-->
-<!--  </tr>-->
-<!--</tbody>-->
-<!--</table>-->
+
 
 <table style="width:100%">
 <thead>
@@ -272,7 +114,7 @@ O produto visa facilitar a organização pessoal do usuário com relação a seu
     <td></td>
   </tr>
   <tr>
-    <td rowspan="4">Gerenciamento de Eventos</td>
+    <td rowspan="6">Gerenciamento de Eventos</td>
     <td>US - 08</td>
     <td>Eu, como usuário do produto, desejo cadastrar um Evento na minha agenda, para saber ao certo o dia e hora que tal Evento ocorrerá</td>
     <td align="center">ALTA</td>
@@ -297,27 +139,39 @@ O produto visa facilitar a organização pessoal do usuário com relação a seu
     <td></td>
   </tr>
   <tr>
-    <td rowspan="5">Gerenciamento de TO-DO list</td>
-    <tr>
     <td>US - 12</td>
-    <td>Eu, como usuário do produto, desejo criar uma lista de tarefas (TO-DO LIST) para estar sempre informado dos meus afazeres</td>
+    <td>Eu, como usuário do produto, desejo escolher tipo de aula ou evento.</td>
     <td align="center">ALTA</td>
     <td></td>
   </tr>
   <tr>
     <td>US - 13</td>
-    <td>Eu, como usuário do produto, desejo editar uma lista de tarefas (TO-DO LIST) para que ela esteja sempre atualizada</td>
+    <td>Eu, como usuário do produto, desejo adicionar aula por código ou horário.</td>
     <td align="center">ALTA</td>
     <td></td>
   </tr>
   <tr>
+    <td rowspan="5">Gerenciamento de TO-DO list</td>
+    <tr>
     <td>US - 14</td>
-    <td>Eu, como usuário do produto, excluir uma lista de tarefas (TO-DO LIST), caso eu queira, para poder organizar minha agenda</td>
+    <td>Eu, como usuário do produto, desejo criar uma lista de tarefas (TO-DO LIST) para estar sempre informado dos meus afazeres</td>
     <td align="center">ALTA</td>
     <td></td>
   </tr>
   <tr>
     <td>US - 15</td>
+    <td>Eu, como usuário do produto, desejo editar uma lista de tarefas (TO-DO LIST) para que ela esteja sempre atualizada</td>
+    <td align="center">ALTA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>US - 16</td>
+    <td>Eu, como usuário do produto, excluir uma lista de tarefas (TO-DO LIST), caso eu queira, para poder organizar minha agenda</td>
+    <td align="center">ALTA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>US - 17</td>
     <td>Eu, como usuário do produto, desejo saber qual a porcentagem das tarefas que já realizei, para que possa ter uma noção da minha evolução nelas</td>
     <td align="center">MÉDIA</td>
     <td></td>
@@ -404,9 +258,11 @@ O MVP, dentro dos Requisitos Funcionais (RFs) são:
 	* US-08: Cadastrar um Evento;
 	* US-09: Editar Eventos;
 	* US-10: Remover Evento;
-	* US-12: Criar uma TO-DO list; 
-	* US-13: Editar uma TO-DO list;
-	* US-14: Excluir uma lista de tarefas (TO-DO lists);
+	* US-12: Escolher tipo aula ou evento;
+	* US-13: Adicionar aula por código/horário;
+	* US-14: Criar uma TO-DO list; 
+	* US-15: Editar uma TO-DO list;
+	* US-16: Excluir uma lista de tarefas (TO-DO lists);
 
 
 Quadro Canvas MVP:
@@ -484,14 +340,12 @@ versão 2.0:
 | Sprint 1 | Definição do Produto | 18/01/22 | 03/02/22 |
 | Sprint 2 | MVP e Planejamento do Projeto | 08/02/22 | 24/02/22 |
 | Sprint 3 | Protótipo de Tela , Ajustar Ambiente de Desenvolvimento | 28/02/22 | 06/03/22 |
-| Sprint 4 | Criar TO-DO List, Editar TO-DO List e excluir TO-DO List | 07/03/22 | 20/03/22 |
-| Sprint 5 | Cadastrar meta, editar meta, excluir meta e marcar meta como completa | 21/03/22 | 27/03/22 |
-| Sprint 6 | cadastrar usuário na plataforma | 28/03/22 | 03/04/22 |
-| Sprint 7 | Realizar login na plataforma, Realizar Logout na plataforma | 04/04/22 | 10/04/22 |
-| Sprint 8 | Enviar notificação de eventos, escolher tipo aula ou evento, adicionar aula por código/horário | 11/04/22 | 17/04/22 |
-| Sprint 9 | Calcular porcentagem da TO-DO List | 18/04/22 | 27/04/22 |
-
-Devido ao atraso no planejamento original, tivemos de replanejar o nosso trabalho, dessa vez, em nove semanas. Percebemos que, devido ao fato da TO-DO List ser um atributo de Meta e evento a mesma deve ser produzida primeiro e, por isso, interrompemos a programação da parte dos eventos para, primeiro, configurar corretamente o funcionamento das TO-DO Lists. Além disso, houve um atraso devido à inexperiência dos envolvidos com a tecnologia Django.
+| Sprint 4 | Criar TO-DO List (US-14), Editar TO-DO List (US-15) e excluir TO-DO List (US-16) | 07/03/22 | 20/03/22 |
+| Sprint 5 | Cadastrar meta (US-04), editar meta (US-05), excluir meta (US-07) e marcar meta como completa (US-06)| 21/03/22 | 27/03/22 |
+| Sprint 6 | Cadastrar usuário na plataforma (US-01), editar meta (US-05), excluir meta (US-07) e marcar meta como completa (US-06) | 28/03/22 | 03/04/22 |
+| Sprint 7 | Realizar login na plataforma (US-02), Realizar Logout na plataforma (US-03)| 04/04/22 | 10/04/22 |
+| Sprint 8 | Escolher tipo aula ou evento (US-12), adicionar aula por código/horário (US-13)| 11/04/22 | 17/04/22 |
+| Sprint 9 | Calcular porcentagem da TO-DO List (US-17) | 18/04/22 | 27/04/22 |
 
 ### 3.3 Matriz de Comunicação
 
@@ -559,6 +413,57 @@ Página para criar evento - US 08, 09, 10, 12, 14:
 Página para criar meta - US 04, 05, 07, 12, 14:
 ![Criar meta](Prototipo_tela/meta.png?raw=true "Title")
 
+### Backlog da Unidade 4
+
+* **Agenda:**
+	* US-04: Cadastrar uma Meta;
+	* US-05: Editar Metas;
+	* US-06: Marcar meta como completa;
+	* US-07: Remover uma Meta;
+	* US-14: Criar uma TO-DO list; 
+	* US-15: Editar uma TO-DO list;
+	* US-16: Excluir uma lista de tarefas (TO-DO lists);
+
+### Backlog da Unidade 5
+
+* **Usuários:**
+	* US-01: Cadastrar uma nova conta na plataforma;
+	* US-02: Realizar login na plataforma;
+	* US-03: Realizar logout;
+* **Agenda:**
+	* US-08: Cadastrar um Evento;
+	* US-09: Editar Eventos;
+	* US-10: Remover um Evento;
+	* US-12: Escolher tipo aula ou evento;
+	* US-13: Adicionar aula por código/horário;
+
+### Pair Pairing
+* **Organização:**
+	* O projeto iniciou e foram definidas 2 duplas, sendo uma delas para o back-end (Leonardo e Luís) e a outra para o front-end (Taynara e Pedro), restando então 1 integrate da equipe, Marcos, o qual apoiaria o a 2ª dupla. O critério de formação das duplas foi quem tinha maior afinidade com as tecnologias utilizadas, visando aumentar a produtividade. 
+	* A dupla do back-end, realizou pair paring aos sábados e domingos  durante 2h para realização da sprint da semana, sendo o Leonardo o piloto e Luís o co-piloto, invertendo os papéis a cada fim de semana. Foi introduzido a refatoração do código, para deixa-lo mais facil de entender e melhor de achar eventuais bugs.
+	* A dupla de front-end (Taynara e Pedro) não realizou o Pair Pairing, decidiu dividir as atividades em tarefas individuais diárias, tirando a duvida de qualquer eventual dificuldades nas reuniões. 
+
+### Estratégias de Teste
+
+
+ | Tipo de Teste | Nível de Teste | Técnica de Teste | Requisito Funcional |
+ | :-----------: | :------------: | :--------------: | :-----------------: |
+ | Funcional     | Sistema        | Manual           |         US-01       |
+ | Funcional     | Sistema        | Manual           |         US-02       |
+ | Funcional     | Sistema        | Manual           |         US-03       |
+ | Funcional     | Sistema        | Manual           |         US-04       |
+ | Funcional     | Sistema        | Manual           |         US-05       |
+ | Funcional     | Sistema        | Manual           |         US-06       |
+ | Funcional     | Sistema        | Manual           |         US-07       |
+ | Funcional     | Sistema        | Manual           |         US-08       |
+ | Funcional     | Sistema        | Manual           |         US-09       |
+ | Funcional     | Sistema        | Manual           |         US-10       |
+ | Funcional     | Sistema        | Manual           |         US-12       |
+ | Funcional     | Sistema        | Manual           |         US-13       |
+ | Funcional     | Sistema        | Manual           |         US-14       |
+ | Funcional     | Sistema        | Manual           |         US-15       |
+ | Funcional     | Sistema        | Manual           |         US-16       |
+
 
 ## 4. Lições Aprendidas
 
@@ -572,9 +477,15 @@ As principais lições aprendidas pela equipe Gama foram: organização e pré-c
 ### 4.3 Unidade 3
 <P>As principais funções aprendidas nessa unidade foram: Como planejar melhor, e de maneira lógica, as etapas de de nosso produto, como funciona a arquitetura do Django e como reunir a equipe de maneira mais eficiente, delegando tarefas mais adequadamente.</P>
 <p>Ponto à melhorar para a próxima unidade: Fazer com que todos os membros da equipe estejam presentes nas apresentações ao professor e aulas, dividir melhor as issues e acelerar o ritmo produtivo da equipe</p>
-### 4.4 Unidade 4
-### 4.5 Unidade 5
 
+### 4.4 Unidade 4
+<P>As principais funções aprendidas nessa unidade foram: Como organizar e se planejar em equipe, como distribuir melhor cada função e dividir cada tarefa entre os integrantes. Além de uma maior capacidade de otimização de código, deixando-o mais enxuto e mais simples de fazer eventuais manutenções.<P>
+<P>Ponto à melhorar para proxima unidade: Oganizar melhor a forma como as atividades são gerenciadas por cada integrante da equipe e aperfeiçoamento das softskills de alguns dos participantes.<P>
+	
+### 4.5 Unidade 5
+<P>As principais funções aprendidas nessa unidade foram: Introdução aos Testes de Software e as suas principais estrategias, aperfeiçoamento do teste funcional com nível de sistema e técnica manual.<P>
+<P>Uso de algumas ferramentas para otimização do código e listagem de versões, além do controle de eventuais bugs e erros.<P>
+	
 ## 5. Referências Bibliográficas
 
 SOMMERVILE, I. Processos de software. In: SOMMERVILLE, I. Engenharia de software. 9. ed. rev. São Paulo: Pearson, 2011.

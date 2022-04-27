@@ -78,6 +78,7 @@
             </a>
             
             <ul class="ul_metas">
+
               {% for meta in metas %}  
                 <div class="lista_metas">
                   <li> 
@@ -86,6 +87,7 @@
                     <a href="{% url 'deletar_meta' meta.id %}"><i class="fa fa-remove"></i></a>
                   </li>
                 </div>
+  
               {% endfor %}
             </ul>
             

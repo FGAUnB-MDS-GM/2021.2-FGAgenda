@@ -3,24 +3,23 @@
 {% block content %}
 <head>
     <link rel="stylesheet" href="{% static 'css/todolist.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'todolist.js' %}"></script>
 </head>
 
-<div class="todo-list-container">
-    <body>
-        <h1>TO DO LIST</h1>
+<div class="container">
+    <div class="todo-list-container">
+        <h1>Adicione suas tarefas</h1>
         <form class="todo-list-form" method = "post">
             {% csrf_token %}
             {{ form.as_p }}
-            <input style="display: inline;" type="submit" value="Adicionar Tarefa">
+            <input style="display: inline;" type="submit" value="Adicionar">
         </form>
 
         {% for item in all_items %}
-
-            <p > {{ item.tarefa }} </p>
-            <!-- style="width:20%;margin:auto 0 auto 0; display: inline;" -->
             <form class="todo-list-form" action="/todolist/editaTarefa/{{item.pk}}/" method = "post">
                 {% csrf_token %}
-                <input type="text" name="conteudo" value="{{item.tarefa}}" required>
+                <input id="conteudo-tarefa" type="text" name="conteudo" value="{{item.tarefa}}" required>
                 <input class="botao-editar" type="submit" value="Editar">
             </form>
             <!-- style="width:20%; display: inline;" -->
@@ -31,7 +30,22 @@
 
         {% endfor %}
 
-    </body>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="tarefas-todo-list-container">
+
+        <h1>TO DO LIST</h1>
+        {% for item in all_items %}
+        <div class="checkboxdiv">
+            <input type="checkbox" name="check"><label>{{ item.tarefa }}</label> <br/>
+        </div>
+        {% endfor %}
+        <p class="checkboxmsg">A TODO List foi concluída com sucesso!</p>
+
+    </div>
+    
 </div>
 
 {% endblock %}

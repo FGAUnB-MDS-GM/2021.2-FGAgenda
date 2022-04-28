@@ -1,7 +1,5 @@
 # Visão do Produto e Projeto
 
-[Apresentação resultados - Unidade 4 (Vídeo)](https://youtu.be/HP5rDg36bIk)
-
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração do Problema

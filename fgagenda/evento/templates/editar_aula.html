@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/editar_evento.css' %}">
+</head>
+
+<div id="container" class="editar-evento-container">
+    <h1>Edite os campos</h1>
+    <form method="post" class="editar-evento-form">
+        {% csrf_token %} {{ form.as_p }}
+        <input type="submit" value="Salvar"/>
+    </form>  
+</div>
+
+
+{% endblock %}

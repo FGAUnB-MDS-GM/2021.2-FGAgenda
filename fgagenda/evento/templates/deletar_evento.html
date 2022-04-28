@@ -3,7 +3,7 @@
 {% block content %}
 
 <head>
-    <link rel="stylesheet" href="{% static 'css/deletar_meta.css' %}">
+    <link rel="stylesheet" href="{% static 'css/deletar_evento.css' %}">
 </head>
 
 
@@ -12,7 +12,7 @@
 
         <h1>Deseja mesmo apagar '{{ object.nome }}' ? </h1>
 
-        <form action="." method="post" class="deletar-meta">
+        <form action="." method="post" class="deletar-evento">
             {% csrf_token %}
             
             <input type="reset" onclick="location.href='{% url 'inicio' %}'" value="Cancelar">

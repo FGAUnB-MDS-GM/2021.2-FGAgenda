@@ -1,7 +1,5 @@
 # Visão do Produto e Projeto
 
-[Apresentação resultados - Unidade 4 (Vídeo)](https://youtu.be/HP5rDg36bIk)
-
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração do Problema
@@ -444,15 +442,26 @@ Página para criar meta - US 04, 05, 07, 12, 14:
 	* A dupla de front-end (Taynara e Pedro) não realizou o Pair Pairing, decidiu dividir as atividades em tarefas individuais diárias, tirando a duvida de qualquer eventual dificuldades nas reuniões. 
 
 ### Estratégias de Teste
-* **Primeira Estratégia de Teste:**
-	* Tipo de teste: Funcional;
-	* Nível de teste: Sistema; e
-	* Técnica de teste: Manual.
 
-* **Segunda Estratégia de Teste:**
-	* Tipo de teste: Eficiência;
-	* Nível de teste: Sistema; e
-	* Técnica de teste: Automático.
+
+ | Tipo de Teste | Nível de Teste | Técnica de Teste | Requisito Funcional |
+ | :-----------: | :------------: | :--------------: | :-----------------: |
+ | Funcional     | Sistema        | Manual           |         US-01       |
+ | Funcional     | Sistema        | Manual           |         US-02       |
+ | Funcional     | Sistema        | Manual           |         US-03       |
+ | Funcional     | Sistema        | Manual           |         US-04       |
+ | Funcional     | Sistema        | Manual           |         US-05       |
+ | Funcional     | Sistema        | Manual           |         US-06       |
+ | Funcional     | Sistema        | Manual           |         US-07       |
+ | Funcional     | Sistema        | Manual           |         US-08       |
+ | Funcional     | Sistema        | Manual           |         US-09       |
+ | Funcional     | Sistema        | Manual           |         US-10       |
+ | Funcional     | Sistema        | Manual           |         US-12       |
+ | Funcional     | Sistema        | Manual           |         US-13       |
+ | Funcional     | Sistema        | Manual           |         US-14       |
+ | Funcional     | Sistema        | Manual           |         US-15       |
+ | Funcional     | Sistema        | Manual           |         US-16       |
+
 
 ## 4. Lições Aprendidas
 
@@ -468,9 +477,25 @@ As principais lições aprendidas pela equipe Gama foram: organização e pré-c
 <p>Ponto à melhorar para a próxima unidade: Fazer com que todos os membros da equipe estejam presentes nas apresentações ao professor e aulas, dividir melhor as issues e acelerar o ritmo produtivo da equipe</p>
 
 ### 4.4 Unidade 4
-
+<P>As principais funções aprendidas nessa unidade foram: Como organizar e se planejar em equipe, como distribuir melhor cada função e dividir cada tarefa entre os integrantes. Além de uma maior capacidade de otimização de código, deixando-o mais enxuto e mais simples de fazer eventuais manutenções.<P>
+<P>Ponto à melhorar para proxima unidade: Oganizar melhor a forma como as atividades são gerenciadas por cada integrante da equipe e aperfeiçoamento das softskills de alguns dos participantes.<P>
+	
 ### 4.5 Unidade 5
+<P>As principais funções aprendidas nessa unidade foram: Introdução aos Testes de Software e as suas principais estrategias, aperfeiçoamento do teste funcional com nível de sistema e técnica manual.<P>
+<P>Uso de algumas ferramentas para otimização do código e listagem de versões, além do controle de eventuais bugs e erros.<P>
+	
+## 5. Constatações/Conclusão
+<P>Este trabalho foi desenvolvido com o intuito de facilitar o dia a dia do aluno da faculdade de Engenharia de Software da FGA no momento de escolha do tema para o projeto por parte dos discentes e em todo o processo de desenvolvimento do trabalho. O sistema foi projetado com uma alta usabilidade, de forma que os usuários não terão dificuldades em utilizar nenhuma das funcionalidades.<P>
+<P>Na finalização do projeto, houve dificuldade na codificação do calendário principal devido ao JavaScript, que era preciso pra desenvolve-lo e o grupo tinha pouca ou nenhuma experiência na tecnologia.<P>
+<P>Devido as dificuldades enfrentadas o projeto ficou com débito no calendário principal e nas Us-12 e Us-13 (Cadastrar Aulas). A porcentagem de conclusão do MVP (Mínimo Produto Viável) ficou em 86%.<P>
+	
+### 5.1 Trabalhos Futuros
+* **As ideias que foram pensadas, e não incluídas no sistema atual, mas que podem ser implementados futuramente são:**
+ 	* Adaptação do sistema para todos os dispositivos;
+	* Calendário principal mostrando Evento e Meta listados; e
+	* Cadastro de aulas pela nomenclatura de período e horário da Universidade.
 
-## 5. Referências Bibliográficas
+	
+## 6. Referências Bibliográficas
 
 SOMMERVILE, I. Processos de software. In: SOMMERVILLE, I. Engenharia de software. 9. ed. rev. São Paulo: Pearson, 2011.

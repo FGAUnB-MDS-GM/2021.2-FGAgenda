@@ -17,29 +17,24 @@ h4,
  h5{
     font-family: "Poppins", sans-serif;
 }
-.page-header{
-	width: 400px;
-	height: 70px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
+
 .box-container{
 	width: 400px;
-	height: 300px;
+	height: 400px;
   	padding: 10px;
-  	margin: 10px;
+  	margin: 50px;
   	border-radius:5px;
   	background-color: rgb(230, 245, 240);
   	color: black;
-  	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5)
+  	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+	margin-top: 60px;
+	margin-left: 480px;
 }
 
 body{
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 }
 
@@ -48,22 +43,7 @@ span{
 	margin: auto;
 	height: 15%;
 	width: 50%;
-	font-weight: 800;
-}
-
-
-h1#logo{
-	font-family: "Poppins", sans-serif;
-	font-size: 26px;
-	height: 25%;
-	width: 55%;
-}
-h1#title{
-	height: 25%;
-	width: 35%;
-	text-align: center;
-	font-weight: 800;
-	font-size: 26px;
+	font-weight: 400;
 }
 
 .box-container form{

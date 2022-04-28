@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/pagina-principal.css' %}">
+    <script src="{% static 'dycalendar.js' %}"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js.js' %}"></script>
+</head>
+
+<body>
+ 
+<div>
+    <!-- <a href="{% url 'selecionar' %}"><button class="btn btn-color">+ Criar</button></a> -->
+    <button onclick="location.href='{% url 'selecionar' %}'" class="btn btn-color" >+ Criar</button>
+</div>
+
+<section>
+    <div class="box">
+      <div class="container">
+        <div id="dycalendar"></div>
+      </div>
+    </div>
+</section>
+  
+
+  <!--JS do calendário-->
+  <script>
+    dycalendar.draw({
+      target: "#dycalendar",
+      type: "month",
+      dayformat: "full",
+      monthformat: "full",
+      highlighttargetdate: true,
+      prevnextbutton: "show",
+    });
+  </script>
+  
+<div class="sidebar"></div>
+  <nav>
+    <ul id="ul_principal">
+        <li class="li_p">
+            <a href="javascript://" class="bt">
+
+                Eventos
+
+                <img src="{% static 'icones/seta_branca.png' %}" width="20px" >
+
+            </a>
+            <ul class="ul_eventos">
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+
+            </ul>
+        </li> 
+        <li class="li_p">
+            <a href="javascript://" class="bt2">
+
+                Metas
+                <img src="{% static 'icones/seta_branca.png' %}" width="20px">
+            </a>
+            
+            <ul class="ul_metas">
+              {% for item in object_list %}  
+                  <p id="nome-meta"> 
+                    <li class="lista_metas"> 
+                      <a href="{% url 'todolist' %}">{{ item.meta.nome }}</a>
+                      <a href="{% url 'editar_meta' item.meta.id %}"><i class="fa fa-pencil"></i> </a>
+                      <a href=""> <i class="fa fa-remove"></i> </a> 
+                    </li>
+                  </p>
+                <!-- <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li> -->
+              {% endfor %}
+            </ul>
+            
+        </li>
+
+
+    </ul>
+  </nav>
+</div>
+</body>
+{% endblock %}

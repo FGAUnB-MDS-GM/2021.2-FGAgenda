@@ -1,0 +1,34 @@
+.btn{
+      font-size: 20px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      border: none;
+      padding: 2% 5%;
+      cursor: pointer;
+      box-shadow: 1.5px 1.5px rgb(184, 180, 180);
+}
+.btn-color{
+      background-color: rgb(104, 216, 216);
+      color: black;
+      border-radius: 10px;
+}
+.btn-color:hover{
+      background-color: rgb(32, 110, 110);
+      color: white;
+}
+.btn-color:active{
+      position: relative;
+      top: 5px;
+      box-shadow: none;
+}
+  
+.pos-evento{
+      position: relative;
+      margin-left: 30%;
+      margin-top: 13%;
+}
+
+.pos-meta{
+      margin-left: 8%;
+      margin-top: 13%;
+}

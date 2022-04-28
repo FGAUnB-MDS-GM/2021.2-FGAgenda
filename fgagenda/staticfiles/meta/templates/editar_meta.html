@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/editar_meta.css' %}">
+</head>
+
+<div id="container" class="editar-meta-container">
+    <h1>Edite os campos</h1>
+    <form method="post" class="editar-meta-form">
+        {% csrf_token %} {{ form.as_p }}
+        <input type="submit" value="Salvar"/>
+    </form>  
+</div>
+
+
+{% endblock %}

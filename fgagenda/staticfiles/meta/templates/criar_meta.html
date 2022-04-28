@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/criar_meta.css' %}">
+</head>
+
+<div id="container" class="cria-meta-container">
+    <body>
+        <h1>Preencha os campos</h1>
+        
+        <form method = "post" class="cria-meta-form">{% csrf_token %} 
+
+            {{ form.as_p }}
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </body>
+</div>
+{% endblock %}

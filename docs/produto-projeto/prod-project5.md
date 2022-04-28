@@ -456,8 +456,6 @@ Página para criar meta - US 04, 05, 07, 12, 14:
  | Funcional     | Sistema        | Manual           |         US-08       |
  | Funcional     | Sistema        | Manual           |         US-09       |
  | Funcional     | Sistema        | Manual           |         US-10       |
- | Funcional     | Sistema        | Manual           |         US-12       |
- | Funcional     | Sistema        | Manual           |         US-13       |
  | Funcional     | Sistema        | Manual           |         US-14       |
  | Funcional     | Sistema        | Manual           |         US-15       |
  | Funcional     | Sistema        | Manual           |         US-16       |

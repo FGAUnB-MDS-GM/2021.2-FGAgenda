@@ -3,7 +3,8 @@ from django.shortcuts import render
 from django.views import View
 from django.urls import reverse
 from django.http import HttpResponseRedirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.utils.decorators import method_decorator
 
 # Local imports
@@ -98,3 +99,9 @@ class LoginView(View):
             'error': 'E-mail ou senha inválidos'
         }     
         return render(request, 'login.html', data)
+    
+
+class LogoutView(LoginRequiredMixin, View):
+    def get(self, request):
+        logout(request)
+        return HttpResponseRedirect(reverse('login'))

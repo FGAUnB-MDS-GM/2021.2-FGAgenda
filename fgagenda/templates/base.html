@@ -19,6 +19,13 @@
             <!-- src="{% static 'icones/favicon.ico'  %}" -->
        </div>
 
+       <div class="logout">
+            <h3>Olá, {{ user.get_short_name }}</h3>
+            <a href="{% url 'logout' %}">
+                <h4>Sair</h4>
+            </a>
+        </div> 
+
        {% block content %}
        {% endblock %}
 

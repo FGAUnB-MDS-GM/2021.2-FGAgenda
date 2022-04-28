@@ -1,4 +1,5 @@
 # Django imports
+from re import template
 from django.shortcuts import render
 from django.views import View
 from django.urls import reverse
@@ -14,13 +15,14 @@ from .decorators import *
 
 # Create your views here.
 class SignupManagerView(View):
+    template_name = 'login.html'
     
-    @method_decorator(is_manager_or_superuser)
+    #@method_decorator(is_manager_or_superuser)
     def get(self, request):
         data = { 'form': SignupManagerForm() }     
         return render(request, 'cadastrar.html', data)
     
-    @method_decorator(is_manager_or_superuser)
+    #@method_decorator(is_manager_or_superuser)
     def post(self, request):
         form = SignupManagerForm(data=request.POST)
 
@@ -40,34 +42,6 @@ class SignupManagerView(View):
         }  
 
         return render(request, 'cadastrar.html', data)
-
-
-class RegisterEmployeeView(View):
-
-    @method_decorator(is_manager)
-    def get(self, request):
-        data = { 'form': RegisterEmployeeForm() }     
-        return render(request, 'register_employee.html', data)
-        
-    @method_decorator(is_manager)
-    def post(self, request):
-        form = RegisterEmployeeForm(data=request.POST)
-
-        if form.is_valid():
-            name = form.cleaned_data.get('name')
-            email = form.cleaned_data.get('email')
-            password = form.cleaned_data.get('password')
-            
-            Employee.objects.create_user(email=email, password=password, name=name)
-            return HttpResponseRedirect(reverse('product_types'))
-        
-        data = { 
-            'form': form,
-            'error': 'Usuário ou senha inválidos'
-        }  
-
-        return render(request, 'register_employee.html', data)
-
 
 
 class LoginView(View):

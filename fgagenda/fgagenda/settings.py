@@ -64,7 +64,8 @@ TEMPLATES = [
             BASE_DIR / 'templates',
             'todolist/templates',
             'meta/templates',
-            'evento/templates'
+            'evento/templates',
+            'usuario/templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {

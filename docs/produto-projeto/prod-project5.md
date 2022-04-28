@@ -451,7 +451,6 @@ Página para criar meta - US 04, 05, 07, 12, 14:
  | Funcional     | Sistema        | Manual           |         US-03       |
  | Funcional     | Sistema        | Manual           |         US-04       |
  | Funcional     | Sistema        | Manual           |         US-05       |
- | Funcional     | Sistema        | Manual           |         US-06       |
  | Funcional     | Sistema        | Manual           |         US-07       |
  | Funcional     | Sistema        | Manual           |         US-08       |
  | Funcional     | Sistema        | Manual           |         US-09       |
@@ -485,7 +484,7 @@ As principais lições aprendidas pela equipe Gama foram: organização e pré-c
 ## 5. Constatações/Conclusão
 <P>Este trabalho foi desenvolvido com o intuito de facilitar o dia a dia do aluno da faculdade de Engenharia de Software da FGA no momento de escolha do tema para o projeto por parte dos discentes e em todo o processo de desenvolvimento do trabalho. O sistema foi projetado com uma alta usabilidade, de forma que os usuários não terão dificuldades em utilizar nenhuma das funcionalidades.<P>
 <P>Na finalização do projeto, houve dificuldade na codificação do calendário principal devido ao JavaScript, que era preciso pra desenvolve-lo e o grupo tinha pouca ou nenhuma experiência na tecnologia.<P>
-<P>Devido as dificuldades enfrentadas o projeto ficou com débito no calendário principal e nas Us-12 e Us-13 (Cadastrar Aulas). A porcentagem de conclusão do MVP (Mínimo Produto Viável) ficou em 86%.<P>
+<P>Devido as dificuldades enfrentadas o projeto ficou com débito no calendário principal e nas Us-12 e Us-13 (Cadastrar Aulas). A porcentagem de conclusão do MVP (Mínimo Produto Viável) ficou em 80%.<P>
 	
 ### 5.1 Trabalhos Futuros
 * **As ideias que foram pensadas, e não incluídas no sistema atual, mas que podem ser implementados futuramente são:**

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 body,
 input,
 textarea,
@@ -11,14 +12,12 @@ h2,
 h3,
 h4,
  h5{
-    font-family: 'Roboto' , sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 }
 
@@ -36,9 +35,11 @@ body{
   	padding: 10px;
   	margin: 10px;
   	border-radius:5px;
-  	background-color: #005F40;
-  	color: white;
-  	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  	background-color: rgb(152, 206, 206);
+  	color: black;
+  	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+	margin-left: 37%;
+	margin-top: 0%;
 }
 
 .box-container form{
@@ -66,8 +67,8 @@ body{
 	border: none;
 	border-bottom: 1px solid #CCC;
 	color: #555;
-	font-weight: 800;
-	font-family: 'Roboto';
+	font-weight: 450;
+	font-family: "Poppins", sans-serif;
 	font-size: 18px;
 	height: 60%;
 	outline: none;
@@ -79,13 +80,14 @@ body{
 	text-align: right;
 	justify-self: center;
 	align-self: center;
-	font-weight: 800;
+	font-weight: 450;
 }
 
 .box-container input[type="submit"]{
-	background-color: #40942A;
+	background-color: rgb(32, 110, 110);
 	border: none;
-	color: white;
+	border-radius: 5px;
+	color: black;
 	padding: 0.5rem;
 	font-size: medium;
 	text-decoration: none;
@@ -100,5 +102,5 @@ span{
 	margin: auto;
 	height: 15%;
 	width: 50%;
-	font-weight: 800;
+	font-weight: 450;
 }

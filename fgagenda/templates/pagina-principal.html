@@ -10,11 +10,17 @@
     <script type="text/javascript" src="{% static 'js.js' %}"></script>
 </head>
 
+<script>
+  function visitaSelecionar(){
+      window.location="{% url 'selecionar' %}";
+  }
+</script>
+
 <body>
  
 <div>
     <!-- <a href="{% url 'selecionar' %}"><button class="btn btn-color">+ Criar</button></a> -->
-    <button onclick="location.href='{% url 'selecionar' %}'" class="btn btn-color" >+ Criar</button>
+    <button onclick="visitaSelecionar();" class="btn btn-color" >+ Criar</button>
 </div>
 
 <section>
@@ -50,30 +56,38 @@
 
             </a>
             <ul class="ul_eventos">
-                <li><a href="">Link 1</a></li>
-                <li><a href="">Link 2</a></li>
-                <li><a href="">Link 3</a></li>
-
+              {% for evento in eventos %}  
+                <div class="lista_eventos">
+                  <li> 
+                    <a href="{% url 'editar_evento' evento.id %}">{{ evento.nome }}</a>
+                    <a href="{% url 'todolist_evento' evento.id %}"><i class="fa fa-pencil"></i></a>
+                    <a href="{% url 'deletar_evento' evento.id %}"><i class="fa fa-remove"></i></a>
+                  </li>
+                </div>
+              {% endfor %}
             </ul>
         </li> 
+        
         <li class="li_p">
             <a href="javascript://" class="bt2">
 
                 Metas
+
                 <img src="{% static 'icones/seta_branca.png' %}" width="20px">
+
             </a>
             
             <ul class="ul_metas">
-              {% for item in object_list %}  
-                  <p id="nome-meta"> 
-                    <li class="lista_metas"> 
-                      <a href="{% url 'todolist' %}">{{ item.meta.nome }}</a>
-                      <a href="{% url 'editar_meta' item.meta.id %}"><i class="fa fa-pencil"></i> </a>
-                      <a href=""> <i class="fa fa-remove"></i> </a> 
-                    </li>
-                  </p>
-                <!-- <li><a href="">Link 2</a></li>
-                <li><a href="">Link 3</a></li> -->
+
+              {% for meta in metas %}  
+                <div class="lista_metas">
+                  <li> 
+                    <a href="{% url 'editar_meta' meta.id %}">{{ meta.nome }}</a>
+                    <a href="{% url 'todolist_meta' meta.id %}"><i class="fa fa-pencil"></i></a>
+                    <a href="{% url 'deletar_meta' meta.id %}"><i class="fa fa-remove"></i></a>
+                  </li>
+                </div>
+  
               {% endfor %}
             </ul>
             

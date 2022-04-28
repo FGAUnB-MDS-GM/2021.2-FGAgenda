@@ -1,7 +1,5 @@
 # Visão do Produto e Projeto
 
-[Apresentação resultados - Unidade 4 (Vídeo)](https://youtu.be/HP5rDg36bIk)
-
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração do Problema
@@ -458,8 +456,6 @@ Página para criar meta - US 04, 05, 07, 12, 14:
  | Funcional     | Sistema        | Manual           |         US-08       |
  | Funcional     | Sistema        | Manual           |         US-09       |
  | Funcional     | Sistema        | Manual           |         US-10       |
- | Funcional     | Sistema        | Manual           |         US-12       |
- | Funcional     | Sistema        | Manual           |         US-13       |
  | Funcional     | Sistema        | Manual           |         US-14       |
  | Funcional     | Sistema        | Manual           |         US-15       |
  | Funcional     | Sistema        | Manual           |         US-16       |
@@ -486,6 +482,18 @@ As principais lições aprendidas pela equipe Gama foram: organização e pré-c
 <P>As principais funções aprendidas nessa unidade foram: Introdução aos Testes de Software e as suas principais estrategias, aperfeiçoamento do teste funcional com nível de sistema e técnica manual.<P>
 <P>Uso de algumas ferramentas para otimização do código e listagem de versões, além do controle de eventuais bugs e erros.<P>
 	
-## 5. Referências Bibliográficas
+## 5. Constatações/Conclusão
+<P>Este trabalho foi desenvolvido com o intuito de facilitar o dia a dia do aluno da faculdade de Engenharia de Software da FGA no momento de escolha do tema para o projeto por parte dos discentes e em todo o processo de desenvolvimento do trabalho. O sistema foi projetado com uma alta usabilidade, de forma que os usuários não terão dificuldades em utilizar nenhuma das funcionalidades.<P>
+<P>Na finalização do projeto, houve dificuldade na codificação do calendário principal devido ao JavaScript, que era preciso pra desenvolve-lo e o grupo tinha pouca ou nenhuma experiência na tecnologia.<P>
+<P>Devido as dificuldades enfrentadas o projeto ficou com débito no calendário principal e nas Us-12 e Us-13 (Cadastrar Aulas). A porcentagem de conclusão do MVP (Mínimo Produto Viável) ficou em 86%.<P>
+	
+### 5.1 Trabalhos Futuros
+* **As ideias que foram pensadas, e não incluídas no sistema atual, mas que podem ser implementados futuramente são:**
+ 	* Adaptação do sistema para todos os dispositivos;
+	* Calendário principal mostrando Evento e Meta listados; e
+	* Cadastro de aulas pela nomenclatura de período e horário da Universidade.
+
+	
+## 6. Referências Bibliográficas
 
 SOMMERVILE, I. Processos de software. In: SOMMERVILLE, I. Engenharia de software. 9. ed. rev. São Paulo: Pearson, 2011.

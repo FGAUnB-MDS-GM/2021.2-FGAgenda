@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'todolist',
     'meta',
-    'evento'
+    'evento',
+    'usuario'
 ]
 
 MIDDLEWARE = [
@@ -63,7 +64,8 @@ TEMPLATES = [
             BASE_DIR / 'templates',
             'todolist/templates',
             'meta/templates',
-            'evento/templates'
+            'evento/templates',
+            'usuario/templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -109,6 +111,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'usuario.User'
+
+LOGIN_URL = '/usuario/login/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
